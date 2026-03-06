@@ -1,4 +1,4 @@
-{
+export const resumeData ={
   "basics": {
     "name": "Gurudatta Shanbhag",
     "title": "Senior Backend Engineer",
