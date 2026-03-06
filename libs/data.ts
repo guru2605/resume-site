@@ -2,7 +2,7 @@ export const resumeData = {
     basics: {
       name: "Gurudatta Shanbhag",
       title: "Software Developer 3 – Backend",
-      summary: "Backend Software Developer with 7+ years of experience leading backend architecture, system design, and ML data pipelines.",
+      summary: "Senior Backend Engineer with 7+ years of experience designing scalable distributed systems, ML data pipelines, and workflow-driven platforms. Experienced in building high-performance APIs, data collection systems for machine learning, and LLM-powered applications. Strong focus on system design, backend architecture, and reliability while mentoring engineers and driving technical decision-making.",
       location: "Bengaluru",
       email: "gurushan13@gmail.com",
       phone: "9743458616"
@@ -14,18 +14,23 @@ export const resumeData = {
         dates: "10/2022 – Present",
         location: "Bengaluru",
         bullets:[
-          "Led backend development single-handedly for the Rater Assistant, a RAG-based training application enabling raters to ask questions and learn from large uploaded training documents.",
-          "Defined API contracts, implemented async services with FastAPI, and collaborated closely with the ML team to integrate data retrieval for LLM-driven features.",
-          "Mentored and onboarded new team members, helping them understand backend architecture and best practices; facilitated knowledge-sharing sessions.",
-          "Conducted 100+ interviews for backend engineering roles, strengthening the hiring pipeline with a focus on technical quality and team fit.",
-          "Partnered with the manager to create and track quarterly developer growth plans.",
-          "Contributed to data collection applications for ML model training, ensuring seamless data ingestion and reliability for customer projects.",
-          "Built sourcing projects to recruit and manage crowd workers for specialized ML data-collection tasks.",
-          "Designed and built features for Audio Annotation System & Computer Vision products, enabling annotation on audio/LiDAR/Image/Video datasets for self-driving car projects.",
-          "Developed a QC tool for reviewer feedback & accuracy measurement, improving annotation quality.",
-          "Re-architected CV labeling to support long image sequences; wrote Python scripts to debug pixel corruption and backfill data.",
-          "Optimized backend performance by caching (Redis), pre-aggregations, and refactoring 60% of legacy Go code.",
-          "Delivered backend migrations for data-collection apps and worked on prompt engineering for annotation flows."
+          "Led backend architecture and development for Rater Assistant, a Retrieval-Augmented Generation (RAG) based training platform enabling raters to query large training datasets and documentation using LLM-powered question answering.",
+          "Designed scalable REST APIs and asynchronous backend services using FastAPI for document ingestion, metadata processing, and retrieval pipelines.",
+          "Collaborated with ML engineers to integrate embedding generation, vector search, and retrieval pipelines enabling LLM-driven workflows for large document collections.",
+          "Designed and implemented backend systems supporting large-scale ML data collection workflows used to train Computer Vision and Audio models.",
+          "Built and maintained annotation platforms supporting Image, Video, Audio, and LiDAR datasets used for autonomous driving and AI training projects.",
+          "Developed quality control tools to measure rater accuracy, capture reviewer feedback, and improve dataset quality across annotation workflows.",
+          "Re-architected computer vision labeling pipelines to support long sequential image datasets, improving annotation efficiency and processing performance.",
+          "Developed internal tooling and Python scripts to identify and repair corrupted pixel data in large image datasets and backfill millions of affected records.",
+          "Optimized backend performance by introducing Redis caching, query optimization, and pre-aggregation strategies, significantly reducing API latency for large dataset queries.",
+          "Refactored and modernized ~60% of legacy Go backend services, improving maintainability, modularity, and observability.",
+          "Built scalable ingestion pipelines to process large training datasets uploaded by customers, supporting preprocessing and metadata indexing.",
+          "Worked on vector search and retrieval approaches for document search systems using modern embedding-based techniques.",
+          "Participated in architectural exploration of workflow orchestration systems and long-running workflow engines for complex data processing pipelines.",
+          "Mentored junior engineers and onboarded new team members by explaining backend architecture, codebase structure, and development practices.",
+          "Conducted 100+ backend engineering interviews, strengthening the hiring pipeline with strong technical evaluation standards.",
+          "Collaborated with engineering leadership to create developer growth plans and guide engineers toward stronger backend engineering practices.",
+          "Worked directly with customers and internal stakeholders to understand ML data collection requirements and translate them into scalable backend systems."
         ]
       },
       {
@@ -34,25 +39,31 @@ export const resumeData = {
         dates: "12/2018 – 10/2022",
         location: "Bengaluru",
         bullets:[
-          "Led a team of 5 engineers, mentoring juniors, conducting daily stand-ups, and distributing tasks effectively.",
-          "Built an Order Management System for restaurants and ERP modules (SCM, POS, CRM) using Python + MongoDB stack.",
-          "Implemented centralized Logging Microservice for all ERP services with searchable UI and filters.",
-          "Delivered Email, SMS & Notification Microservice using RabbitMQ, reducing delivery latency and improving monitoring of notifications.",
-          "Managed SSL/DNS setups, migrated MongoDB to Atlas, and automated EOD reporting using APScheduler & Pandas.",
-          "Worked on API integration with VueJS for client-facing dashboards and automated inventory uploads from Excel."
+          "Led a team of 5 engineers responsible for backend platform development, mentoring junior developers and coordinating engineering delivery.",
+          "Designed and implemented a scalable Order Management System for restaurants along with ERP modules including Supply Chain Management (SCM), Point of Sale (POS), and CRM.",
+          "Built backend microservices using Python and MongoDB supporting order processing, inventory management, and customer operations.",
+          "Developed a centralized Logging Microservice aggregating logs across ERP services with a searchable UI and filtering capabilities for easier debugging and monitoring.",
+          "Designed event-driven notification systems using RabbitMQ to deliver Email, SMS, and in-app notifications across multiple services.",
+          "Reduced latency and improved reliability of notifications by introducing asynchronous message queues and background workers.",
+          "Managed infrastructure operations including SSL certificate setup, DNS configuration, and service deployments.",
+          "Migrated MongoDB infrastructure to MongoDB Atlas to improve scalability, backup reliability, and operational stability.",
+          "Developed automated reporting pipelines using APScheduler and Pandas to generate End-of-Day business reports for restaurants.",
+          "Built backend ingestion tools to process bulk inventory uploads from Excel sheets and automate data processing.",
+          "Collaborated with frontend teams integrating APIs with VueJS dashboards used by restaurant operators."
         ]
       }
     ],
     achievements:[
-      { title: "100+ Interviews", context: "Conducted to strengthen the hiring pipeline." },
-      { title: "60% Legacy Code Refactored", context: "Optimized backend performance using Redis." },
-      { title: "Led Team of 5", context: "Managed and mentored engineers at Digicollect." }
+      { title: "100+ Engineering Interviews Conducted", context: "Strengthened backend hiring pipeline and improved engineering quality through structured technical evaluation." },
+      { title: "60% Legacy Backend Refactored", context: "Improved system performance, reliability, and maintainability through refactoring and Redis caching strategies." },
+      { title: "Led Engineering Team of 5", context: "Mentored engineers, coordinated development processes, and improved engineering practices at Digicollect." }
     ],
     skills:[
       { category: "Languages", items: ["Python", "Go", "Java"] },
-      { category: "Databases & Brokers", items: ["PostgreSQL", "MongoDB", "Redis", "RabbitMQ"] },
-      { category: "Infrastructure", items: ["FastAPI", "AWS", "Docker", "Circle CI", "Git"] },
-      { category: "Concepts", items: ["System Design", "Microservices", "LLM Integration"] }
+      { category: "Backend Frameworks", items: ["FastAPI", "REST APIs", "Async Services"] },
+      { category: "Databases & Messaging", items: ["PostgreSQL", "MongoDB", "Redis", "RabbitMQ"] },
+      { category: "Infrastructure & DevOps", items: ["AWS", "Docker", "CI/CD (CircleCI)", "Git"] },
+      { category: "Concepts", items: ["System Design", "Microservices Architecture", "Distributed Systems", "LLM Integration", "RAG Systems", "Vector Search", "ML Data Pipelines", "Workflow Orchestration"] }
     ],
     education:[
       {
