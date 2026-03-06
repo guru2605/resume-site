@@ -2,70 +2,149 @@ export const resumeData = {
     basics: {
       name: "Gurudatta Shanbhag",
       title: "Software Developer 3 – Backend",
-      summary: "Senior Backend Engineer with 7+ years of experience designing scalable distributed systems, ML data pipelines, and workflow-driven platforms. Experienced in building high-performance APIs, data collection systems for machine learning, and LLM-powered applications. Strong focus on system design, backend architecture, and reliability while mentoring engineers and driving technical decision-making.",
+      summary:
+        "Backend Software Engineer with 7+ years of experience building scalable distributed systems, ML data pipelines, and backend platforms. Experienced in system design, workflow orchestration, RAG-based AI systems, and high-performance backend services.",
       location: "Bengaluru",
       email: "gurushan13@gmail.com",
-      phone: "9743458616"
+      phone: "9743458616",
+      linkedin: "https://www.linkedin.com/in/gurudatta-shanbhag/"
     },
-    experience:[
+  
+    experience: [
       {
         company: "TELUS International CV",
         role: "Software Developer 3 – Backend",
         dates: "10/2022 – Present",
         location: "Bengaluru",
-        bullets:[
-          "Led backend architecture and development for Rater Assistant, a Retrieval-Augmented Generation (RAG) based training platform enabling raters to query large training datasets and documentation using LLM-powered question answering.",
-          "Designed scalable REST APIs and asynchronous backend services using FastAPI for document ingestion, metadata processing, and retrieval pipelines.",
-          "Collaborated with ML engineers to integrate embedding generation, vector search, and retrieval pipelines enabling LLM-driven workflows for large document collections.",
-          "Designed and implemented backend systems supporting large-scale ML data collection workflows used to train Computer Vision and Audio models.",
-          "Built and maintained annotation platforms supporting Image, Video, Audio, and LiDAR datasets used for autonomous driving and AI training projects.",
-          "Developed quality control tools to measure rater accuracy, capture reviewer feedback, and improve dataset quality across annotation workflows.",
-          "Re-architected computer vision labeling pipelines to support long sequential image datasets, improving annotation efficiency and processing performance.",
-          "Developed internal tooling and Python scripts to identify and repair corrupted pixel data in large image datasets and backfill millions of affected records.",
-          "Optimized backend performance by introducing Redis caching, query optimization, and pre-aggregation strategies, significantly reducing API latency for large dataset queries.",
-          "Refactored and modernized ~60% of legacy Go backend services, improving maintainability, modularity, and observability.",
-          "Built scalable ingestion pipelines to process large training datasets uploaded by customers, supporting preprocessing and metadata indexing.",
-          "Worked on vector search and retrieval approaches for document search systems using modern embedding-based techniques.",
-          "Participated in architectural exploration of workflow orchestration systems and long-running workflow engines for complex data processing pipelines.",
-          "Mentored junior engineers and onboarded new team members by explaining backend architecture, codebase structure, and development practices.",
-          "Conducted 100+ backend engineering interviews, strengthening the hiring pipeline with strong technical evaluation standards.",
-          "Collaborated with engineering leadership to create developer growth plans and guide engineers toward stronger backend engineering practices.",
-          "Worked directly with customers and internal stakeholders to understand ML data collection requirements and translate them into scalable backend systems."
+        bullets: [
+          "Led backend development for Rater Assistant, a RAG-based training platform enabling crowd raters to query large training datasets using LLM-powered search.",
+          "Designed backend APIs and async services using FastAPI, enabling document ingestion, embedding generation, and retrieval pipelines.",
+          "Collaborated closely with ML engineers to integrate LLM retrieval pipelines and optimize data access patterns for large document collections.",
+          "Contributed to backend systems powering ML data-collection pipelines used for training computer vision and language models.",
+          "Designed and implemented backend services for annotation platforms supporting image, video, LiDAR, and audio datasets used in autonomous vehicle training.",
+          "Built internal QC tooling for reviewer feedback and annotation accuracy measurement, improving overall data quality.",
+          "Re-architected computer vision labeling workflows to support long image sequences and large dataset processing.",
+          "Developed Python debugging and recovery scripts to detect corrupted pixel data and backfill missing annotation results.",
+          "Improved backend performance through Redis caching, pre-aggregation strategies, and refactoring ~60% of legacy Go services.",
+          "Participated in customer discussions to understand ML data requirements and delivered backend systems supporting scalable data ingestion.",
+          "Mentored junior engineers and onboarded new team members by explaining backend architecture and engineering practices.",
+          "Conducted 100+ technical interviews for backend engineering roles and collaborated with management on developer growth plans."
         ]
       },
+  
       {
         company: "Digicollect",
         role: "Software Developer → Senior SDE → Lead",
         dates: "12/2018 – 10/2022",
         location: "Bengaluru",
-        bullets:[
-          "Led a team of 5 engineers responsible for backend platform development, mentoring junior developers and coordinating engineering delivery.",
-          "Designed and implemented a scalable Order Management System for restaurants along with ERP modules including Supply Chain Management (SCM), Point of Sale (POS), and CRM.",
-          "Built backend microservices using Python and MongoDB supporting order processing, inventory management, and customer operations.",
-          "Developed a centralized Logging Microservice aggregating logs across ERP services with a searchable UI and filtering capabilities for easier debugging and monitoring.",
-          "Designed event-driven notification systems using RabbitMQ to deliver Email, SMS, and in-app notifications across multiple services.",
-          "Reduced latency and improved reliability of notifications by introducing asynchronous message queues and background workers.",
-          "Managed infrastructure operations including SSL certificate setup, DNS configuration, and service deployments.",
-          "Migrated MongoDB infrastructure to MongoDB Atlas to improve scalability, backup reliability, and operational stability.",
-          "Developed automated reporting pipelines using APScheduler and Pandas to generate End-of-Day business reports for restaurants.",
-          "Built backend ingestion tools to process bulk inventory uploads from Excel sheets and automate data processing.",
-          "Collaborated with frontend teams integrating APIs with VueJS dashboards used by restaurant operators."
+        bullets: [
+          "Led a team of 5 engineers responsible for backend development across multiple ERP modules.",
+          "Designed and built an Order Management System for restaurants integrated with POS, SCM, and CRM modules.",
+          "Developed backend services using Python and MongoDB supporting inventory, order management, and reporting workflows.",
+          "Built centralized logging microservice used across ERP systems with searchable UI and log filtering.",
+          "Developed Email, SMS, and notification microservices using RabbitMQ to decouple services and improve reliability.",
+          "Automated end-of-day reporting pipelines using APScheduler and Pandas for business analytics.",
+          "Managed production infrastructure including SSL configuration, DNS setup, and MongoDB Atlas migration.",
+          "Built APIs for client-facing dashboards integrated with VueJS frontends.",
+          "Developed tools for automated Excel-based inventory uploads and batch data processing."
         ]
       }
     ],
-    achievements:[
-      { title: "100+ Engineering Interviews Conducted", context: "Strengthened backend hiring pipeline and improved engineering quality through structured technical evaluation." },
-      { title: "60% Legacy Backend Refactored", context: "Improved system performance, reliability, and maintainability through refactoring and Redis caching strategies." },
-      { title: "Led Engineering Team of 5", context: "Mentored engineers, coordinated development processes, and improved engineering practices at Digicollect." }
+  
+    achievements: [
+      {
+        title: "60% Legacy Backend Refactor",
+        context:
+          "Improved system performance by refactoring legacy services and introducing Redis caching."
+      },
+      {
+        title: "Team Leadership",
+        context:
+          "Led and mentored a team of 5 engineers while delivering multiple backend systems."
+      },
+      {
+        title: "100+ Backend Interviews",
+        context:
+          "Conducted technical interviews to strengthen hiring pipeline and maintain engineering quality."
+      }
     ],
-    skills:[
-      { category: "Languages", items: ["Python", "Go", "Java"] },
-      { category: "Backend Frameworks", items: ["FastAPI", "REST APIs", "Async Services"] },
-      { category: "Databases & Messaging", items: ["PostgreSQL", "MongoDB", "Redis", "RabbitMQ"] },
-      { category: "Infrastructure & DevOps", items: ["AWS", "Docker", "CI/CD (CircleCI)", "Git"] },
-      { category: "Concepts", items: ["System Design", "Microservices Architecture", "Distributed Systems", "LLM Integration", "RAG Systems", "Vector Search", "ML Data Pipelines", "Workflow Orchestration"] }
+  
+    architecture: [
+      {
+        title: "Workflow Orchestration Engine Architecture",
+        description:
+          "Designed architecture for a scalable workflow orchestration platform capable of executing long-running workflows with dynamic step execution.",
+        highlights: [
+          "Researched workflow orchestration platforms including Temporal, Workato, Trigger.dev, and n8n.",
+          "Designed execution model for long-running workflows supporting retries, timers, signals, and event-driven execution.",
+          "Defined workflow step abstractions including Service Tasks, User Tasks, Event Waiters, and Scheduled Tasks.",
+          "Explored strategies for scaling to millions of concurrent workflows using durable workflow state storage.",
+          "Designed event-driven architecture enabling workflows to pause and resume based on external triggers."
+        ],
+        technologies: [
+          "Temporal",
+          "Distributed Systems",
+          "Workflow Engines",
+          "Event Driven Architecture",
+          "Golang"
+        ]
+      },
+  
+      {
+        title: "Dynamic Workflow Runtime Research",
+        description:
+          "Explored architecture for building a visual workflow builder similar to n8n where workflows defined in a UI can dynamically execute on a scalable backend engine.",
+        highlights: [
+          "Designed concept of compiling visual workflow graphs into executable runtime workflows.",
+          "Researched architecture where UI-defined workflows generate runtime workflow definitions executed by backend workers.",
+          "Explored dependency resolution between workflow nodes and dynamic step scheduling.",
+          "Designed event-driven execution supporting external signals, human approvals, and scheduled triggers.",
+          "Investigated scalability considerations for executing large numbers of concurrent workflows."
+        ],
+        technologies: [
+          "Temporal",
+          "Workflow Engines",
+          "System Design",
+          "Distributed Systems"
+        ]
+      }
     ],
-    education:[
+  
+    skills: [
+      {
+        category: "Languages",
+        items: ["Python", "Go", "Java"]
+      },
+      {
+        category: "Databases & Messaging",
+        items: ["PostgreSQL", "MongoDB", "Redis", "RabbitMQ"]
+      },
+      {
+        category: "Backend & Infrastructure",
+        items: ["FastAPI", "Docker", "AWS", "CircleCI", "Git"]
+      },
+      {
+        category: "Architecture & Concepts",
+        items: [
+          "System Design",
+          "Distributed Systems",
+          "Microservices",
+          "Workflow Orchestration",
+          "Event Driven Architecture"
+        ]
+      },
+      {
+        category: "AI / ML Systems",
+        items: [
+          "RAG Systems",
+          "LLM Integration",
+          "Embedding Pipelines",
+          "ML Data Collection Systems"
+        ]
+      }
+    ],
+  
+    education: [
       {
         institution: "Atria Institute of Technology",
         location: "Bengaluru",
