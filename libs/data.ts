@@ -1,7 +1,7 @@
 export const resumeData = {
     basics: {
       name: "Gurudatta Shanbhag",
-      title: "Software Developer 3 – Backend",
+      title: "Backend Developer",
       summary:
         "Backend Software Engineer with 7+ years of experience building scalable distributed systems, ML data pipelines, and backend platforms. Experienced in system design, workflow orchestration, RAG-based AI systems, and high-performance backend services.",
       location: "Bengaluru",
