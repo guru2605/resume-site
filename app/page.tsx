@@ -16,7 +16,7 @@ import { resumeData } from '@/libs/data';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
-  const resumePdfUrl = '/Gurudatta_Shanbhag_Resume.pdf';
+  const resumePdfUrl = 'Gurudatta_Shanbhag_Resume.pdf';
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1800);
