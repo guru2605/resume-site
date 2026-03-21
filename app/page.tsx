@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, type MouseEvent } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Terminal,
@@ -16,11 +16,42 @@ import { resumeData } from '@/libs/data';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const resumePdfUrl = '/Gurudatta_Shanbhag_Resume.pdf';
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1800);
     return () => clearTimeout(timer);
   }, []);
+
+  const handleResumeDownload = async (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    try {
+      const response = await fetch(resumePdfUrl, { cache: 'no-store' });
+
+      if (!response.ok) {
+        throw new Error(`Failed to fetch resume: ${response.status}`);
+      }
+
+      const contentType = response.headers.get('content-type') ?? '';
+      if (!contentType.toLowerCase().includes('pdf')) {
+        throw new Error('Resume URL did not return a PDF');
+      }
+
+      const blob = await response.blob();
+      const objectUrl = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = objectUrl;
+      link.download = 'Gurudatta_Shanbhag_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(objectUrl);
+    } catch (error) {
+      // Fallback to direct navigation if fetch/download flow is blocked.
+      window.location.href = resumePdfUrl;
+    }
+  };
 
   return (
     <>
@@ -112,8 +143,9 @@ export default function Home() {
               </a>
 
               <a
-                href="/Gurudatta_Shanbhag_Resume.pdf"
+                href={resumePdfUrl}
                 download
+                onClick={handleResumeDownload}
                 className="flex items-center px-6 py-3 font-medium transition-all border rounded-lg text-slate-300 border-slate-700 bg-slate-900/50 hover:bg-slate-800 hover:scale-105 active:scale-95"
               >
                 <Download className="w-4 h-4 mr-2" /> Resume
